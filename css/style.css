@@ -1,0 +1,415 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: #ebedf1;
+    color: #04515f !important;
+ 
+    height: 8000px;
+}
+
+
+.navbar{
+    color:beige;
+    opacity: .8;
+   
+  
+}
+
+.navbar-brand{
+    font-weight: bold;
+    font-size: 22px;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(80deg,rgb(0, 219, 222),#fc00ff);
+    -webkit-background-clip: text;
+     background-clip: text;
+    -webkit-text-fill-color: transparent;
+     transition: 0.4s;
+}
+.navbar-brand:hover{
+    text-shadow: 5px 5px 20px rgb(0, 219, 222,.5),
+    -5px -5px 20px rgb(0, 219, 222,.5);
+}
+.navbar-nav .nav-item .nav-link{
+    text-transform: capitalize;
+}
+.navbar-nav .nav-item .nav-link:hover{
+    font-weight: bolder;
+    font-size: 19px;
+    text-shadow: 1px 1px 10px rgb(230, 174, 225),
+     -1px -1px 10px rgb(230, 174, 225);
+     
+    
+}
+.navbar-nav .nav-item .nav-link:hover::first-letter{
+    color:#aa00ad;
+}
+nav .d-flex .btn:hover{
+  opacity: .7;
+
+}
+
+/* ********carousel****************** */
+.carousel-inner{
+   height: 90vh;
+}
+.carousel-item {
+    height: 100%;
+
+}
+.carousel-caption{
+    background: rgba(86, 184, 190, 0.5);
+    border-radius: 10px;
+
+}
+.carousel-caption h2{
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.carousel-caption p{
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.carousel-caption .btn:hover{
+   opacity: .8;
+}
+/* ******************icon ********/
+.icon{
+    position: fixed;
+    top:190px;
+    right: 37px;
+    z-index: 10;
+
+}
+.icon a{
+
+  color: #04515f;
+  text-decoration:none ;
+}
+.icon a i{
+    font-size: 60px;
+    display: block;
+    margin-bottom: 18px;
+   
+
+}
+/* *********************welcome */
+.welcome{
+    background-color: rgb(158, 217, 219);
+   
+    
+}
+.welcome h2{
+    background: -webkit-linear-gradient(90deg,rgb(0, 219, 222),#fc00ff);
+    -webkit-background-clip: text;
+     background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+    font-size: 23px;}
+
+/* ********************destination*************** */
+.destination{
+
+}
+ .head{
+    background-color: #5f9ea0;
+   
+}
+.destination .head h2{
+    font-size:37px;
+}
+/* ****************accordion */
+#accordion .card .card-header a{
+    background: -webkit-linear-gradient(90deg,rgb(0, 219, 222),#fc00ff);
+    -webkit-background-clip: text;
+     background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+/* ***************translate */
+.translate p{
+    font-size: 25px;
+}
+.translate  a{
+    text-decoration: none;
+    color: #04515f;
+}
+.translate .welcome button{
+    color: #5f9ea0;
+}
+/* *************POPULAR */
+.fixed-img1{
+    background: url(../images/slid2.jpg);
+   
+}
+.fixed-img{
+    background-attachment: fixed;
+    background-size: cover;
+    height: 300px;
+
+}
+/* ************* */
+
+ 
+
+.POPULAR .head{
+    background-color: #9ed9db;
+}
+.POPULAR h2{
+    background: -webkit-linear-gradient(90deg,rgb(0, 219, 222),#fc00ff);
+    -webkit-background-clip: text;
+     background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 35px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+   
+}
+.POPULAR .card{
+    position: relative;
+    margin-top: 40px;
+}
+.POPULAR .card::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    top:0;
+    left: 0;
+    transition: 1s;
+    background-color:#9ed9db;
+    opacity: 0;
+
+}
+.POPULAR .card:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: .6;
+}
+.POPULAR .card::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    bottom:0;
+    right: 0;
+    transition: 1s;
+    background-color:#9ed9db;
+    opacity: 0;
+
+}
+.POPULAR .card:hover::before{
+    width: 100%;
+    height: 100%;
+    opacity: .6;
+}
+
+.POPULAR button{
+    position: absolute;
+    bottom:17px;
+    right: 13px;
+    z-index: 10; 
+
+}
+/* ***************** */
+.fixed-img2{
+    background: url(../images/fixed2.jpg);
+}
+.fixed-img{
+   background-attachment: fixed;
+   background-size: cover;
+   height: 300px;
+   margin-top: 50px;
+}
+/* *********thanks for****** */
+.Thanksfor .head{
+    background-color:#9ed9db;
+    margin-bottom: 40px;
+}
+.Thanksfor .head h2{
+    background: -webkit-linear-gradient(90deg,rgb(0, 219, 222),#fc00ff);
+    -webkit-background-clip: text;
+     background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+    font-size: 35px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+   
+}
+.Thanksfor .card{
+    background: url("../images/item-8.jpg");
+    background-size: cover;
+    min-height: 500px;
+    transition: .2s;
+    position: relative;
+}
+.Thanksfor .card:hover{
+    transform: scale(.9);
+    box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.3);
+    background-size: 195%;
+    
+}
+.Thanksfor .card-overley{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   
+    background: linear-gradient(0deg, rgba(35, 79, 109, 0.3785889356) 0%, #455f71 100%);
+}
+.Thanksfor .card:hover .card-overley{
+    background: linear-gradient(0deg, rgba(35, 79, 109, 0.6) 0%, #264155 100%);
+}
+.Thanksfor .card-footer{
+    margin-top: 50%;
+}
+.Thanksfor .media img{
+    border: 3px solid gray;
+}
+/* *******************cards******** */
+.cards h2{
+    background: -webkit-linear-gradient(90deg,rgb(0, 219, 222),#fc00ff);
+    -webkit-background-clip: text;
+     background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+    font-size: 35px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+}
+
+/* ****************cards********* */
+.cards .card{
+    background-color: #e1e5ea;
+    box-shadow: -5px 5px 20px 10px rgb(201, 198, 241);
+    overflow: hidden;
+   
+}
+.cards .card:hover .bar{
+  width: 12%;
+}
+.cards .card .imge img{
+    transition: .2s;
+    object-fit: cover;
+
+}
+.cards .card:hover img{
+   transform: scale(1.1);
+}
+.cards .card-body{
+    position: relative;
+}
+.cards .card-body::before{
+    content: "";
+    position: absolute;
+    background: #e1e5ea;
+    display: block;
+    top: -20%;
+    right: -12px !important;
+    transform: rotate(-4deg);
+    
+    height: 130%;
+    width: 55px;
+}
+.card-right::before{
+    content: "";
+    position: absolute;
+    background: #e1e5ea;
+    display: block;
+    top: -20%;
+    left: -12px !important;
+    transform: rotate(4deg);
+    
+    height: 130%;
+    width: 55px;
+}
+.cards .card h3{
+ color: #04515f;
+ cursor: pointer;
+}
+.cards .card h3:hover{
+    color: #5f9ea0;
+}
+.cards .card time{
+    font-size: 13px;
+}
+.cards .card .bar{
+    background-color: #0076bd;
+    width: 7%;
+    height: 5px;
+    transition: .5s;
+}
+.cards .card .small{
+    margin-top: 50px;
+    font-family: sans-serif;
+}
+.cards .card span{
+    background-color: #a8aaad;
+    padding: 5px;
+    border-radius: 3px;
+    transition: .2s;
+}
+.cards .card span:hover{
+    background-color: #797b7d;
+}
+.cards .card span a{
+    color: #04515f;
+}
+.card-3{
+    background-color: li;
+}
+/* *********************join-us*********** */
+.join-us{
+  margin-top: 40px;
+}
+.join-us h2{
+    background: -webkit-linear-gradient(90deg,rgb(0, 219, 222),#fc00ff);
+    -webkit-background-clip: text;
+     background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+    font-size: 35px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+   
+}
+
+.join-us .card{
+    box-shadow:-5px -5px 20px 10px rgb(201, 198, 241) ;
+    width: 250px;
+}
+.join-us .card input{
+     width: 80px;
+     height: 80px;
+     transition: .8s;
+}
+.join-us input:hover{
+    opacity: .7;
+}
+/* footer****** ******************/
+footer img{
+    box-shadow: -3px -3px 20px 10px rgb(201, 198, 241);
+}
+footer img:hover{
+    opacity: .9;
+}
+footer h5{
+    background: -webkit-linear-gradient(90deg,rgb(0, 219, 222),#fc00ff);
+    -webkit-background-clip: text;
+     background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 25px;
+
+}
